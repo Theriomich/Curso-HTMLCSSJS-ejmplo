@@ -44,6 +44,9 @@ main {
   flex-direction: column;
   align-items: center; 
   gap: 20px; 
+  display: flex; 
+  flex-wrap: wrap; /* Permitir que los elementos hagan wrap */
+  justify-content: center; /* Centrar los artículos */
 }
 
 article {
@@ -53,6 +56,8 @@ article {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   padding: 15px; 
   max-width: 500px; 
+  flex-wrap: wrap;
+    flex:1; 
   text-align: center;
 }
 
@@ -69,7 +74,7 @@ footer {
   background-color: #333; 
   color: white; 
   margin-top: auto; 
-  width: 100%; /
+  width: 100%; 
 }
 
 footer a {
@@ -82,33 +87,13 @@ footer a:hover {
 }
 
 
-
-
-
 body {
   font-size: 14px;
   margin: 10px;
 }
 
-@media screen and (min-width: 1200px) {
-  main {
-    flex-direction: row;   
-    flex-wrap: wrap;   
-    justify-content:space-between; 
-  }
-
-article img{
-  height: 400px;
-  width: 400px;
-}
-}
 
 
-@media screen and (max-width: 600px) {
-  body {
-    background-color: green;
-  }
-}
 
 
 
